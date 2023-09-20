@@ -9,10 +9,18 @@ body{
 #head{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: rgb(243, 243, 243);
+    padding: 10px;
    
 }
+#ecom{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: black;
+    font-weight: bolder;
+}
+
 #head input{
     width: 400px;
     height: 25px;
@@ -31,12 +39,6 @@ a{
 }
 #head button:hover{
     background-color: rgb(197, 197, 197);
-}
-#head h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    font-weight: bolder;
-    color: black;
 }
 #navhead{
     
@@ -179,8 +181,74 @@ hr{
     margin-left: 10px;
 }
 @media only screen and (max-width: 480px) {
-    #items{
+    #search{
+        display: flex;
         width: 100%;
-        height: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    #search input{
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 10px;
+    }
+    #ecom{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #head{
+        padding: 20px;
+        margin-top: 0px;
+        text-align: center;
+        display: block;
+        flex-direction: column;
+    }
+    #navhead{
+        width: 100%;
+    }
+    #cont{
+        display: block;
+    }
+    #items{
+        width: 85%;
+    }
+    #tex{
+        width: 100%;
+
+    }
+    #filter{
+        margin-bottom: 20px;
     }
   }
+@media only screen and ((min-width: 481px) and (max-width: 1000px)){
+    #ecom{
+        font-size: 2em;
+    }
+    #search{
+        display: flex;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #search input{
+        width: 100%;
+    }
+    #cont{
+        display: block;
+    }
+    #items{
+        width: 40%;
+    }
+    #filter{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #tex{
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 300px){
+    body{
+        display: none;
+    }
+}
