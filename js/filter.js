@@ -4,6 +4,7 @@ const brandc=document.getElementById('c');
 const brand=document.getElementsByClassName('A');
 const brand1=document.getElementsByClassName('B');
 const brand2=document.getElementsByClassName('C');
+const main=document.getElementById('main');
 branda.addEventListener('click', ()=>{
     for(let i=0;i<brand1.length;i++){
         brand1[i].style.display='none';
@@ -13,11 +14,13 @@ branda.addEventListener('click', ()=>{
     }
     for(let i=0;i<brand.length;i++){
         brand[i].style.display='block';
-    }
+        
+    }   
 });
 brandb.addEventListener('click', ()=>{
     for(let i=0;i<brand1.length;i++){
         brand1[i].style.display='block';
+
     }
     for(let i=0;i<brand2.length;i++){
         brand2[i].style.display='none';
